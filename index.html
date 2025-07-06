@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intervue - Technical Interview Resources</title>
+    
+    <!-- Sora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">int<span class="underline">e</span>rvu<span class="underline">e</span></span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="user" class="nav-icon"></i>
+                        Become an Interviewer
+                    </a>
+                    <a href="#" class="nav-link">features</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">Start a trial</a>
+                </nav>
+                
+                <!-- Desktop Auth Buttons -->
+                <div class="auth-buttons-desktop">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-signup">Signup</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="nav-mobile hidden" id="mobileMenu">
+                <div class="nav-mobile-content">
+                    <a href="#" class="nav-link-mobile">
+                        <i data-lucide="user" class="nav-icon"></i>
+                        Become an Interviewer
+                    </a>
+                    <a href="#" class="nav-link-mobile">features</a>
+                    <a href="#" class="nav-link-mobile">Pricing</a>
+                    <a href="#" class="nav-link-mobile">Start a trial</a>
+                    <div class="auth-buttons-mobile">
+                        <button class="btn-login-mobile">Login</button>
+                        <button class="btn-signup-mobile">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Technical Interview Resources</h1>
+                    <p class="hero-subtitle">Find all the technical interview resources here</p>
+                    
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <i data-lucide="search" class="search-icon"></i>
+                            <input type="text" placeholder="Search for resource here" class="search-input" id="searchInput">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources">
+            <div class="container">
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Resources - JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section class="security"> 
+            <div class="container">
+                <div class="security-content">
+                    <h2 class="section-title">Security is our top priority</h2>
+                    <p class="section-subtitle">Intervue serves startups to fortune 500 companies with enterprise-grade security baked in by design</p>
+                </div>
+                
+                <div class="security-grid">
+                    <div class="security-card">
+                        <i data-lucide="wrench" class="security-icon"></i>
+                        <h3 class="security-title">Security</h3>
+                        <p class="security-description">Protecting your data at every layer is fundamental to how Intervue works</p>
+                        <i data-lucide="arrow-right" class="security-arrow"></i>
+                    </div>
+                    
+                    <div class="security-card">
+                        <i data-lucide="layers" class="security-icon"></i>
+                        <h3 class="security-title">Compliances</h3>
+                        <p class="security-description">Enterprise-grade compliance commitments where we have established controls to adhere to those commitments</p>
+                        <i data-lucide="arrow-right" class="security-arrow"></i>
+                    </div>
+                    
+                    <div class="security-card">
+                        <i data-lucide="rocket" class="security-icon"></i>
+                        <h3 class="security-title">Interview for Startups</h3>
+                        <i data-lucide="arrow-right" class="security-arrow"></i>
+                    </div>
+                    
+                    <div class="security-card">
+                        <i data-lucide="globe" class="security-icon"></i>
+                        <h3 class="security-title">Interview for Enterprises</h3>
+                        <i data-lucide="arrow-right" class="security-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial-card">
+                    <div class="testimonial-video">
+                        <div class="video-placeholder">
+                            <!-- Placeholder for Niket Gupta image -->
+                            <img src="/assets/one.png" alt="Niket Gupta testimonial" class="testimonial-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display: none;">
+                                <span>Niket Gupta Photo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <blockquote class="testimonial-quote">
+                            "After interviewing candidates on Intervue, we were able to convert at least 5% of people from our application base to hires."
+                        </blockquote>
+                        
+                        <div class="testimonial-author">
+                            <div class="author-name">Niket Gupta</div>
+                            <div class="author-title">Group head of talent acquisition, Yubi</div>
+                        </div>
+                        
+                        <button class="testimonial-link">
+                            See more customer stories 
+                            <i data-lucide="arrow-right" class="link-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="container">
+                <div class="products-header">
+                    <h2 class="section-title">Explore more products on intervue</h2>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <!-- Placeholder for On-demand product interface -->
+                            <img src="/assets/left.png" alt="On-demand interviews interface" class="product-interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display: none;">
+                                <span>On-demand Interface</span>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">On-demand</h3>
+                            <p class="product-description">Save 90% of engineering & recruitment bandwidth, outsource candidate interviews to us</p>
+                            <button class="product-link">
+                                Know more 
+                                <i data-lucide="arrow-right" class="link-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <!-- Placeholder for Live Interviews product interface -->
+                            <img src="/assets/middle.png" alt="Live interviews interface" class="product-interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display: none;">
+                                <span>Live Interviews Interface</span>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Live Interviews</h3>
+                            <p class="product-description">Assess candidates in real-time with our live coding environment & integrated video calls</p>
+                            <button class="product-link">
+                                Know more 
+                                <i data-lucide="arrow-right" class="link-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <!-- Placeholder for Assessments product interface -->
+                            <img src="/assets/right.png" alt="Assessments interface" class="product-interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display: none;">
+                                <span>Assessments Interface</span>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Assessments</h3>
+                            <p class="product-description">Share assessments across batches with MCQ, Programming and Subjective questions.</p>
+                            <button class="product-link">
+                                Know more 
+                                <i data-lucide="arrow-right" class="link-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+<section class="faq">
+  <div class="container faq-grid">
+    <!-- Left content -->
+    <div class="faq-left">
+      <h2 class="section-title">FAQs</h2>
+      <p class="faq-subtitle">Here are frequently asked questions to clear all your doubts.</p>
+      <div class="faq-contact">
+        <p class="faq-contact-text">Still have doubts?</p>
+        <button class="faq-contact-btn">
+          <i data-lucide="phone" class="phone-icon"></i>
+          Talk to our representative
+        </button>
+      </div>
+    </div>
+
+    <!-- Right accordion -->
+    <div class="faq-right">
+      <div class="faq-list" id="faqContainer">
+        <!-- FAQ items will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- FAQ Section 
+        <section class="faq">
+            <div class="container">
+                <div class="faq-content">
+                    <h2 class="section-title">FAQs</h2>
+                    <p class="faq-subtitle">Here are frequently asked questions to clear all your doubts.</p>
+                    
+                    <div class="faq-list" id="faqContainer">
+                        <!-- FAQ items will be populated by JavaScript --> <!--
+                    </div>
+                    
+                    <div class="faq-contact">
+                        <p class="faq-contact-text">Still have doubts?</p>
+                        <button class="faq-contact-btn">
+                            <i data-lucide="phone" class="phone-icon"></i>
+                            Talk to our representative
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Newsletter Section -->
+                    <div class="newsletter">
+                        <div class="newsletter-logo">
+                              <span class="logo-text">
+                                int<span class="underline">e</span>rvu<span class="underline">e</span></span>
+                        </div>
+                        <h3 class="newsletter-title">Hire better & faster</h3>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">
+                                <i data-lucide="arrow-right" class="newsletter-arrow"></i>
+                            </button>
+                        </form>
+                        <div id="newsletterMessage" class="newsletter-message"></div>
+                        
+                        <div class="social-links">
+                            <span>Facebook</span>
+                            <span>Instagram</span>
+                            <span>LinkedIn</span>
+                            <span>Pinterest</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-title">Company</h4>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">So geht's</a></li>
+                                <li><a href="#" class="footer-link">Erfahrung</a></li>
+                                <li><a href="#" class="footer-link">Aligner</a></li>
+                                <li><a href="#" class="footer-link">Preise</a></li>
+                                <li><a href="#" class="footer-link">Standorte</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-title">Resources</h4>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Blog</a></li>
+                                <li><a href="#" class="footer-link">FAQ</a></li>
+                                <li><a href="#" class="footer-link">Lift Media</a></li>
+                                <li><a href="#" class="footer-link">Offene Stellen</a></li>
+                                <li><a href="#" class="footer-link">Presse kit</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-title">Product</h4>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Gratis Termin</a></li>
+                                <li><a href="#" class="footer-link">Freunde einladen</a></li>
+                                <li><a href="#" class="footer-link">Patienteninforma</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-title">Product</h4>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Blog</a></li>
+                                <li><a href="#" class="footer-link">FAQ</a></li>
+                                <li><a href="#" class="footer-link">Lift Media</a></li>
+                                <li><a href="#" class="footer-link">Offene Stellen</a></li>
+                                <li><a href="#" class="footer-link">Presse kit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Datenschutz</a>
+                        <a href="#" class="legal-link">Impressum</a>
+                        <a href="#" class="legal-link">Cookie Policy</a>
+                        <a href="#" class="legal-link">AGBs</a>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>© 2023 Intervue. Crafted by great minds.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
