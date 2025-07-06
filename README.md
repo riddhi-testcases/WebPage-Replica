@@ -4,7 +4,7 @@ A fully responsive, pixel-perfect replica of Intervue.io’s landing page interf
 
 ## Live Demo
 
-🔗 [View Live]
+[View Live](https://web-page-replica-by-riddhi.vercel.app/)
 
 ## About the Project
 
